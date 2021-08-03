@@ -10,14 +10,18 @@ public class TestVolatile {
 
         while (true) {
             if(threadDemo.isFlag()){
-                System.out.println("主线程");
+                System.out.println("main");
             }
         }
 
     }
 }
 class ThreadDemo implements Runnable{
-    private boolean flag = false;
+
+    // 内存不可见
+//    private boolean flag = false;
+    // 内存可见
+    private volatile boolean flag = false;
 
     public boolean isFlag() {
         return flag;
