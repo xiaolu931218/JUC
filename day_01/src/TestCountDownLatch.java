@@ -30,7 +30,7 @@ class LatchDemo implements Runnable{
 
     CountDownLatch countDownLatch;
 
-    LatchDemo(CountDownLatch countDownLatch) {
+    public LatchDemo(CountDownLatch countDownLatch) {
         this.countDownLatch = countDownLatch;
     }
 
