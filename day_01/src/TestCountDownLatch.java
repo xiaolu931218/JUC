@@ -8,6 +8,7 @@ import java.util.concurrent.CountDownLatch;
 public class TestCountDownLatch {
 
     public static void main(String[] args) {
+        // 线程数
         final int COUNT = 6;
         // 1、创建闭锁
         CountDownLatch countDownLatch = new CountDownLatch(COUNT);
